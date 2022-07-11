@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from torch.optim import AdamW
 from torch.nn import CrossEntropyLoss
 from torch.utils.data import Dataset, DataLoader, RandomSampler, SequentialSampler, random_split
-from transformers import BertTokenizer
+from transformers import BertTokenizer, BertModel
 
 def set_device():
     if torch.cuda.is_available():
