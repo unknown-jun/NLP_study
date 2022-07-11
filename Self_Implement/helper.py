@@ -14,6 +14,7 @@ def set_device():
         print(f"GPU name : {torch.cuda.get_device_name()}")
     else:
         device = torch.device("cpu")
+    return device
 
 class CustomDataset(Dataset):
     
